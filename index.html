@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Icon/Logo.svg">                 
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="form" action="form" class="form">
+            <div class='form__container container'>
+                <h1 class="form__title">Отправка формы на почту</h1>
+                <div class="form__sub-title">Версия 2</div>
+                <div class="form__body">
+                    <div class="form__item">
+                        <label for="formname" class="form__label">Введите имя*</label>
+                        <input id="formname" type="text" class="form__input req" name="name">
+                    </div>
+                    <div class="form__item">
+                        <label for="formemail" class="form__label">Введите E-mail*</label>
+                        <input id="formemail" type="email" class="form__input req email" name="email">
+                    </div>
+                    <div class="form__item">
+                        <label for="formmessage" class="form__label">Введите Сообщение</label>
+                        <textarea name="message" id="formmessage" class="form__textarea"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label">Прикрепить фото</label>
+                        <div class="file">
+                            <div class="file__item">
+                                <input id="formImage" accept=".jpg, .png, .gif, .webp" type="file" class="file__input agreement" name="formImage">
+                                <div class="file__button">Выбрать</div>
+                            </div>
+                            <div id="formImagePreview" class="file__preview"></div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <input id="formAgreement" type="checkbox" class="form__checkbox req req_checkbox" name="checkbox" checked>
+                        <label for="formAgreement" class="form__label form__label_checkbox">Я даю свое согласие на обработку персональных данных в соответствии <a href=""> условиями</a></label>
+                    </div>
+                    <button class="form__button" type="submit" name="submit">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
